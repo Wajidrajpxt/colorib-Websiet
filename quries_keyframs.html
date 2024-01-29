@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Responsive</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+            background-color: wheat;
+            padding: 1px;
+        }        
+        .container_slider{
+            height: 550px;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            border: 3px solid brown;
+            overflow: hidden;
+        }
+        .slider{
+            height: 100%;
+            width: 200%;
+            border: 2px solid lime;
+            animation: slide 16s linear infinite;
+        }
+        @keyframes slide {
+            0%{
+                margin-left: 0;
+            }
+            12.5%{
+                marginwidth-left: 0;
+                
+            }
+            25%{
+                margin-left: -25%;
+                
+            }
+            37.5%{
+                margin-left: -25%;
+                
+            }
+            50%{
+                margin-left: -50%;
+                
+            }
+            62.5%{
+                margin-left: -50%;
+                
+            }
+            75%{
+                margin-left: -75%;
+                
+            }
+            87.5%{
+                margin-left: -75%;
+                
+            }
+            100%{
+                margin-left: -100%;
+                
+            }
+
+
+
+        }
+        .slides{
+            height: 100%;
+            width: 11.5%;
+            border: 2px solid blue;
+            display: inline-block;
+            font-size: 30px;
+        }
+        .sld1{
+            margin-left: 0.9%;
+        }
+
+
+
+
+        /* //////////////////////////////////////// */
+
+        @media screen and (max-width: 924px) {
+            .slider{
+                width: 400%;
+            }
+            /* .slider{
+            height: 100%;
+            width: 200%;
+            border: 2px solid lime;
+            animation: slide 16s linear infinite;
+        } */
+        @keyframes slide {
+            0%{
+                margin-left: 0;
+            }
+            8%{
+                margin-left: 0;
+                
+            }
+            16%{
+                margin-left: -50%;
+                
+            }
+            24%{
+                margin-left: -50%;
+                
+            }
+            32%{
+                margin-left: -100%;
+                
+            }
+            40%{
+                margin-left: -100%;
+                
+            }
+            48%{
+                margin-left: -150%;
+                
+            }
+            56%{
+                margin-left: -150%;
+                
+            }
+            64%{
+                margin-left: -200%;
+                
+            }
+            72%{
+                margin-left: -200%;
+                
+            }
+            80%{
+                
+                margin-left: -250%;
+            }
+            88%{
+                margin-left: -250%;
+                
+            }
+            100%{
+                margin-left: -300%;
+
+            }
+
+
+
+        }   
+        }
+
+        @media screen and (max-width: 600px) {
+            .slider{
+            height: 100%;
+            width: 800%;
+            border: 2px solid lime;
+            animation: slide 32s linear infinite;
+        }
+        @keyframes slide {
+            0%{
+                margin-left: 0;
+            }
+            6.3%{
+                margin-left: 0;
+                
+            }
+            12.6%{
+                margin-left: -100%;
+                
+            }
+            18.9%{
+                margin-left: -100%;
+                
+            }
+            25.2%{
+                margin-left: -200%;
+                
+            }
+            31.5%{
+                margin-left: -200%;
+                
+            }
+            37.8%{
+                margin-left: -300%;
+                
+            }
+            44.1%{
+                margin-left: -300%;
+                
+            }
+            50.4%{
+                margin-left: -400%;
+                
+            }
+            56.7%{
+                margin-left: -400%;
+                
+            }
+            63%{
+                
+                margin-left: -500%;
+            }
+            69.3%{
+                margin-left: -500%;
+                
+            }
+            75.6%{
+                margin-left: -600%;
+                
+            }
+            81.9%{
+                margin-left: -600%;
+                
+            }
+            88.2%{
+                margin-left: -700%;
+                
+            }
+            94.4%{
+                margin-left: -700%;
+                
+            }
+           
+
+
+
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+
+        <div class="container_slider">
+    
+            <div class="slider">
+    
+                <div class="slides">1</div>
+                <div class="slides sld1">2</div>
+                <div class="slides sld1">3</div>
+                <div class="slides sld1">4</div>
+                <div class="slides sld1">5</div>
+                <div class="slides sld1">6</div>
+                <div class="slides sld1">7</div>
+                <div class="slides sld1">8</div>
+    
+    
+            </div>
+    
+    
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

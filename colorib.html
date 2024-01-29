@@ -1,0 +1,2839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>colorib</title>
+    <style>
+        * {
+            padding: 1px;
+            box-sizing: border-box;
+            margin: 0;
+            border: none !important  ;
+        }
+
+        .section_1 {
+            height: max-content;
+            width: 100%;
+            /* border: 3px solid #000; */
+        }
+
+        .head {
+            height: max-content;
+            width: 100%;
+            /* border: 5px solid red; */
+            background-color: rgb(30, 31, 41);
+
+        }
+
+        .child_1 {
+            height: max-content;
+            width: 50%;
+            /* border: 3px solid white; */
+            margin-left: 4%;
+            display: inline-block;
+
+        }
+
+        .services {
+            height: 7vh;
+            width: auto;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 2%;
+            cursor: pointer;
+        }
+
+        .envelop {
+            font-size: 14px;
+            color: rgb(192, 21, 40);
+        }
+
+        .phone {
+            font-size: 13px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            line-height: 27px;
+            display: inline;
+            color: white;
+        }
+
+        .account {
+            height: 8vh;
+            width: 20%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            /* margin-top: -4%; */
+            margin-left: 20%;
+        }
+
+        .usd {
+            font-size: 12px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            line-height: 27px;
+            display: inline;
+            color: white;
+        }
+
+        .edit {
+            width: auto;
+        }
+
+        .child_2 {
+            height: max-content;
+            width: 100%;
+            /* border: 5px solid red; */
+            padding-bottom: 50px;
+            background-color: rgb(21, 22, 29);
+            /* display: inline; */
+        }
+
+        .logo {
+            height: max-content;
+            width: auto;
+            /* border: 1px solid white; */
+            margin-left: 5%;
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: 5%; */
+        }
+
+        .logo_1 {
+            /* margin-left:5%; */
+        }
+
+        .bar {
+            height: 8vh;
+            width: 45%;
+            /* border: 1px solid white; */
+            background-color: white;
+            border-radius: 20px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 5%;
+            margin-top: 1%;
+        }
+
+        #category {
+            height: 100%;
+            width: 30%;
+            /* border-top-right-radius: 20px; */
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            /* border-right: 1px; */
+            transform: translateY(-2%);
+            /* border-radius: 20px;                */
+        }
+
+        .here_11 {
+            height: 100%;
+            width: 33%;
+            border: 1px solid #000;
+            border: none;
+            vertical-align: top;
+            /* margin-top: -1.8%; */
+        }
+
+        .b_search{
+            height: 100%;
+            width: 35%;
+            margin-left: .6%;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            /* border-radius: 20px ;/ */
+            background-color: rgb(192, 21, 40);
+            border: none;
+            font-size: 22px;
+            color: white;
+        }
+
+        .cart {
+            height: max-content;
+            width: 30%;
+            /* border: 2px solid white; */
+            margin-left: 1%;
+            display: inline-block;
+            vertical-align: top;
+            /* float: right; */
+            margin-top: 1%;
+        }
+
+        .wish {
+            height: 100%;
+            width: 48%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 21px;
+            color: white;
+            /* margin-top:5%; */
+        }
+
+        .paras {
+            font-size: 17px;
+            color: white;
+        }
+
+        .circle {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: rgb(192, 21, 40);
+            position: absolute;
+            top: -6%;
+            left: 63%;
+        }
+
+        .two {
+            font-size: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .data {
+            height: 10vh;
+            width: 100%;
+            border: 1px solid silver;
+        }
+
+        .home {
+            height: 6vh;
+            width: max-content;
+            /* border-bottom: 1px solid #000; */
+            font-size: 16px;
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            /* top: 2%; */
+            /* left: 8%; */
+            margin-left: 2%;
+            margin-top: 1.5%;
+            cursor: pointer;
+        }
+
+        .adjust {
+            color: red;
+        }
+
+        .line {
+            height: 2px;
+            width: 0%;
+            visibility: hidden;
+            /* border: 1px solid red; */
+            background-color: red;
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+        }
+
+        .home:hover .line {
+            width: 100%;
+            visibility: visible;
+            cursor: pointer;
+        }
+
+        .parent_1 {
+            height: max-content;
+            width: 90%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        .card {
+            height: auto;
+            width: 30%;
+            /* border: 5px solid #000; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 2.2%;
+            background-color: silver;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shop {
+            height: 100%;
+            width: 100%;
+            transition: all 0.34s linear;
+        }
+
+        .clip {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(210, 23, 54, 0.788);
+            clip-path: polygon(0 0, 90% 0, 32% 99%, 0 100%);
+        }
+
+        .laptop {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: Montserrat, sans-serif;
+            line-height: 26px;
+            color: white;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+
+        .now {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            color: white;
+            margin-top: 2%;
+            margin-left: 10%;
+            /* transform: scale();         */
+        }
+
+        .shop:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .section_2 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .parent_2 {
+            height: 10vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            margin-top: 5%;
+            position: relative;
+        }
+
+        .product {
+            font-size: 24px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            line-height: 26px;
+            margin-left: 7%;
+        }
+
+        .box {
+            height: auto;
+            width: 28%;
+            /* border: 1px solid #000; */
+            position: absolute;
+            right: 06%;
+            top: 0PX;
+        }
+
+        .smart {
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            line-height: 20px;
+            display: inline;
+            margin-left: 3%;
+            color: rgb(156, 153, 174);
+            position: relative;
+            /* border: 1px solid #000; */
+        }
+
+        .arang {
+            color: rgb(209, 24, 57);
+        }
+
+        .line_2 {
+            height: 2px;
+            width: 2%;
+            background-color: rgb(209, 24, 57);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            visibility: hidden;
+            transition: all;
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+        }
+
+        .smart:hover .line_2 {
+            width: 100%;
+            cursor: pointer;
+            visibility: visible;
+        }
+
+        .parent_3 {
+            /* padding: 1px; */
+            height: 90vh;
+            width: 90%;
+            /* border: 1px solid red; */
+            margin: auto;
+            overflow: hidden;
+            /* object-fit: contain; */
+        }
+
+        .child_3 {
+            height: 90%;
+            width: 200%;
+            /* border: 1px solid green;/ */
+            object-fit: fill;
+            animation-name: slider;
+            animation-duration: 16s;
+            /* animation-timing-function: linear; */
+            /* animation-iteration-count : infinite;  */
+        }
+
+        @keyframes slider {
+            0% {
+                margin-left: 0;
+            }
+
+            12% {
+                margin-left: 0;
+            }
+
+            24% {
+                margin-left: -25%;
+            }
+
+            36% {
+                margin-left: -25%;
+            }
+
+            48% {
+                margin-left: -50%;
+            }
+
+            60% {
+                margin-left: -50%;
+            }
+            72%{
+                margin-left: -75%;
+            }
+            88%{
+                margin-left: -75%;
+            }
+            100% {
+                margin-left: -100%;
+            }
+        }
+
+        .slide {
+            height: max-content;
+            width: 12.3%;
+            /* border: 1px solid/ black; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: %; */
+        }
+
+        .img_product {
+            /* height: 3//0vh; */
+            width: 100%;
+            /* border: 5px solid #000; */
+            position: relative;
+        }
+
+        .part_1 {
+            height: max-content;
+            width: 100%;
+        }
+
+        .new {
+            height: 25px;
+            width: 20%;
+             /* border: 1px solid  rgb(209,24,57); */
+            background-color: rgb(209, 24, 57);
+            position: absolute;
+            left: 65%;
+            top: 10px;
+        }
+
+        .new_1 {
+            font-size: 12px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            line-height: 17px;
+            color: white;
+            text-align: center;
+        }
+
+        .text_1 {
+            height: 15vh;
+            width: 100%;
+            margin-top: -10%;
+            /* border: 1px solid rgb(209, 24, 57); */
+        }
+
+        .cate {
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            line-height: 17px;
+            color: silver;
+            text-align: center;
+        }
+
+        .names {
+            font-size: 17px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            line-height: 15px;
+            color: rgb(45, 45, 66);
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .names:hover {
+            color: rgb(209, 24, 57);
+            cursor: pointer;
+        }
+
+        .numeric {
+            height: 5vh;
+            width: 80%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            /* display: inline; */
+            margin-top: 3%;
+        }
+
+        .dolor {
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+            line-height: 20px;
+            color: rgb(209, 24, 57);
+            /* text-align: center; */
+            margin-left: 20%;
+            display: inline-block;
+        }
+
+        .dolor_5 {
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            color: silver;
+            display: inline-block;
+            text-decoration: line-through;
+        }
+
+        .bar_1 {
+            height: 2px;
+            width: max-content;
+            /* border: 1px solid #000; */
+            margin: auto;
+            background-color: silver;
+        }
+
+        .icons {
+            height: max-content;
+            width: 100%;
+            background-color: silver;
+            /* margin-left: 20%; */
+            margin-top: 15%;
+            /* display: inline-block; */
+        }
+
+        .dis {
+            color: rgb(209, 24, 57);
+        }
+
+        .suggest {
+            height: 5vh;
+            width: 80%;
+            border: 1px solid red ;
+            margin: auto;
+            margin-top: 30%;
+        }
+
+        .eye {
+            height: 100%;
+            width: 20%;
+            /* border: 1px solid #000; */
+            /* border-radius: 20%; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10%;
+            text-align: center;
+        }
+
+        .arrow {
+            font-size: 17px;
+            margin-top: 5px;
+        }
+
+        .eye:hover {
+            border-radius: 50%;
+            background-color: silver;
+            color: rgb(209, 24, 57);
+        }
+
+        .section_4 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .deal_1 {
+            padding-bottom: 2%;
+            padding: 1px;
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-image: url("hotdeal.png");
+            background-position: center;
+            background-size: cover;
+            margin-top: 5%;
+
+        }
+
+        .deal_2 {
+            height: 90%;
+            width: 40%;
+            /* border: 1px solid #000; */
+            margin-left: 32%;
+            /* margin-top: 2; */
+            /* position: absolute;
+            left: 32%;
+            top: 2%; */
+        }
+
+        .lap {
+            height: 100%;
+            width: 100%;
+        }
+
+        .m_circle {
+            width: 82%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            /* margin-top: 10%; */
+
+        }
+
+        .cir {
+            height: 80px;
+            width: 80px;
+            /* border: 1px solid #000; */
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgb(209, 24, 57);
+            /* margin-left: 1%; */
+        }
+
+        .num {
+            font-family: Montserrat, sans-serif;
+            font-size: 24px;
+            line-height: 26px;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .day {
+            font-family: Montserrat, sans-serif;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+            color: white;
+            text-align: center;
+            /* margin-top: 30px; */
+        }
+
+        .week {
+            height: 30vh;
+            width: 100%;
+            /* border: 5px solid red; */
+            margin: auto;
+            margin-top: 2%;
+        }
+
+        .this {
+            font-family: Montserrat, sans-serif;
+            font-size: 30px;
+            line-height: 33px;
+            font-weight: 700;
+            color: rgb(43, 45, 66);
+            text-align: center;
+            margin-top: 7%;
+        }
+
+        .up {
+            font-family: Montserrat, sans-serif;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 400;
+            color: rgb(43, 45, 66);
+            text-align: center;
+            margin-top: 2%;
+        }
+
+        .s_n {
+            height: 6vh;
+            width: 30%;
+            border: 1px solid rgb(209, 24, 57);
+            border-radius: 20px;
+            background-color: rgb(209, 24, 57);
+            color: white;
+            margin-left: 35%;
+            /* margin-top: 2%; */
+        }
+
+        .section_5 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .section_6 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .parent_4 {
+            height: max-content;
+            width: 90%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .child_4 {
+            height: 60vh;
+            width: 33.1%;
+            /* border: 6px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+        .slider_11 {
+            height: 100%;
+            width: 200%;
+            /* border: 4px solid red; */
+            animation-name: slid;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slid {
+            0% {
+                margin-left: 0%;
+            }
+
+            50% {
+                margin-left: 0%;
+            }
+            51% {
+                margin-left: -100%;
+            }
+            100% {
+                margin-left: -100%;
+            }
+        }
+        .slider_12 {
+            height: 100%;
+            width: 200%;
+            /* border: 2px solid red; */
+            animation-name: slid_1;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+        }
+        @keyframes slid_1 {
+            0% {
+                margin-left: 0;
+            }
+            50% {
+                margin-left: 0;
+            }
+            51% {
+                margin-left: -100%;
+            }
+            100% {
+                margin-left: -100%;
+            }
+        }
+        .slider_13 {
+            height: 100%;
+            width: 200%;
+            /* border: 2px solid red; */
+            animation-name: slid_2;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes slid_2 {
+            0% {
+                margin-left: 0;
+            }
+
+            50% {
+                margin-left: 0;
+            }
+
+            51% {
+                margin-left: -100%;
+            }
+
+            100% {
+                margin-left: -100%;
+            }
+        }
+
+        .s_child {
+            height: 100%;
+            width: 49.5%;
+            /* background-color: aqua; */
+            display: inline-block;
+            vertical-align: top;
+            /* border: 2px solid lime; */
+        }
+        .top_12{
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            line-height: 30px;
+            font-weight: 700;
+            color: rgb(43,45,66);         
+        }
+        .top_1 {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            color: rgb(43, 45, 66);
+        }
+        .here {
+            height: 30%;
+            width: 100%;
+            /* border: 5px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .pic_11 {
+            height: 100%;
+            width: 22%;
+            /* border: 1px solid #000; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .pro {
+            height: 100%;
+            width: 100%;
+        }
+        .info {
+            height: 100%;
+            width: 75%;
+            /* border: 1px solid #000; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .text_11 {
+            font-size: 11px;
+            font-family: Montserrat, sans-serif;
+            line-height: 14px;
+            font-weight: 400;
+            color: gray;
+            margin-top: 2%;
+        }
+        .tex_2 {
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            line-height: 13px;
+            font-weight: 700;
+            color: rgb(47,49,70);
+            margin-top: 3%;
+        }
+        .tex_2:hover{
+            color:  rgb(209, 24, 57);
+        }   
+        .text_22{
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            line-height: 13px;
+            font-weight: 700;
+            color: rgb(47,49,70);
+            margin-top: 3%;
+        }
+        .text_22:hover{
+            color:  rgb(209, 24, 57);
+            cursor: pointer;
+      
+        }
+        .text_55 {
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            line-height: 15px;
+            font-weight: 700;
+            color: rgb(214, 26, 58);
+            margin-top: 3%;
+        }
+        .value {
+            font-size: 10px;
+            font-family: Montserrat, sans-serif;
+            line-height: 11px;
+            font-weight: 700;
+            color: gray;
+            /* margin-top: 3%; */
+        }
+        .section_7{
+            height: max-content;
+            width: 100%;
+            /* border: 3px solid #050; */
+        }
+        .mes{
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+            border: 2px solid  gray;
+            /* border-bottom: 5px solid  rgb(214, 26, 58); */
+            padding: 50px 0;
+            position: relative;
+            /* display: inline-block; */
+        }
+        .up_1{
+            font-size: 24px;
+            font-family: Montserrat, sans-serif;
+            line-height: 34px;
+            font-weight: 400;
+            color: black;
+            text-align: center;
+            margin-top: 2%;
+        }
+        .thin{
+            font-size: 150px;
+            transform: rotate(20deg);
+            color: rgba(128, 128, 128, 0.466);
+            position: absolute;
+            top: 25px;
+            left: 25%;
+            z-index: -1;
+        }
+        .email_2{
+            height: 8vh;
+            width: 50%;
+            /* border: 4px solid red; */
+            border-radius: 20px;
+            margin: auto;
+            /* position: absolute; */
+            margin-top: 20px;
+        }
+        .e_y{
+            height: 100%;
+            width: 70%;
+            /* border: 1px solid #000;/ */
+            border-bottom-left-radius: 20px;   
+            border-top-left-radius: 20px;
+        }
+      
+        .sub_1{
+            height: 100%;
+            width: 29%;
+            border: 1px solid  rgb(214, 26, 58);
+            background-color:  rgb(214, 26, 58);   
+            border-top-right-radius: 20px;      
+            border-bottom-right-radius: 20px;   
+            /* margin-top: -2%;                */
+        }
+        .envelop-1{
+            font-size: 14px;
+            color: white;
+            /* margin-left: -60%; */
+        }
+        .sub{
+            font-size: 14px;
+            color: white;
+            /* margin-top: -15px; */
+        }
+        .parent_10{
+            height: 8vh;
+            width: 16%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            margin-top: 40px;
+        }
+        .icon_44{
+            height: 100%;
+            width: 23%;
+            border: 1px solid silver;
+            display: inline-block;
+            vertical-align: top;  
+            transition: all;
+            transition-duration: 0.5s; 
+        }
+        .icon_44:hover{
+            background-color: silver;
+        }        
+        .pinter{
+            font-size: 15px;
+            margin-left:12px;
+            margin-top: 12px;
+        }
+        .icon_44:hover .pinter{
+            /* background-color: gray; */
+            color:  rgb(214, 26, 58);
+        }
+        .parent_11{
+            height: max-content;
+            width: 100%;
+            /* border: 3px solid #000; */
+            background-color: rgb(21,22,29);
+            /* margin-top: ;    */
+            padding: 1px;
+        }
+        .child_14{
+            height: max-content;
+            width: 90%;
+            /* border: 5px solid blue; */
+            margin: auto;
+            margin-top: 30px;
+        }
+        .box_22{
+            height: 100%;
+            width: 24.5%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .about{
+            font-size: 20px;
+            font-family: Montserrat, sans-serif;
+            line-height: 18px;
+            font-weight: 700;
+            color: white;
+            margin-top: 15%;
+        }
+        .sit{
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(170,183,188);
+            margin-top: 5%; 
+            transition: all;
+            transition-duration: 0.5s;
+        
+        }
+        .location{
+            font-size: 14px;
+            color:  rgb(214, 26, 58);
+            margin-top: 10%;   
+        }
+        .road{
+            font-size: 14px;
+            font-family: Montserrat, sans-serif;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgb(170,183,188);
+            margin-left: 10%;
+            margin-top: -8%;
+            transition: all;
+            transition-duration: 0.5s;
+        }
+        .road:hover{
+            color: rgb(214, 26, 58);
+        }
+        .arrange{
+            height: 40vh;
+            width: 70%;
+            /* border: 3px solid white; */
+            margin-top: 15%;
+        }
+        .a_box{
+            height: 18%;
+            width: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;            
+        }
+        .sit:hover{
+            color: rgb(214, 26, 58);
+            cursor: pointer;
+        }
+        .parent_12{
+            height: 30vh;
+            width: 100%;
+            /* border: 5px solid white; */
+            background-color: rgb(30,31,41);
+            margin-top: 3%;   
+        }
+        .cards{
+            height: 10vh;
+            width: 35%;
+            /* border: 2px solid white; */
+            margin: auto;   
+            margin-top: 3%;   
+        }
+        .debit{
+            height: 100%;
+            width: 19%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+        }
+        .visa{
+            font-size: 33px;
+            margin-left: 10%;
+        }
+        .copyright{
+            color: rgb(170,183,188);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: center;
+            font-family: Montserrat, sans-serif;
+            margin-top: 2%;   
+        }
+        .colori{
+            color: gray ;
+        }
+
+        /* //////////////////// Media Queries  ///////////////////////////////// */
+
+       
+
+
+        @media screen and (max-width:1277px) {
+            .m_circle {
+                width: 100%;
+            }
+            .child_4{
+                width: 49%;
+                border: 3px solid rec;
+            }
+
+        }
+        @media screen and (max-width:1080px) {
+            .child_3{
+              width: 400%;  
+            }
+
+            @keyframes slider {
+                0%{
+                    margin-left: 0;
+                }
+                
+                8%{
+                    margin-left: 0;
+                }
+                16%{
+                    margin-left: -50%;
+                }
+               
+                24%{
+                    margin-left: -50%;
+                }
+                32%{
+                    margin-left: -100%;
+                }
+                40%{
+                    margin-left: -100%;
+                }
+                48%{
+                    margin-left: -150%;
+                }
+                56%{
+                    margin-left: -150%;
+                }
+                64%{
+                    margin-left: -200%;
+                }
+                72%{
+                    margin-left: -200%;
+                }
+                80%{
+                    margin-left: -250%;
+                }
+                88%{
+                    margin-left: -250%;
+                }
+                100%{
+                    margin-left: -300%;
+                }
+            }   
+        }
+        
+
+
+
+        @media screen and (max-width:1075px) {
+            .b_search {
+                width: 35.6%;
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width:1045px) {
+            .m_circle {
+                width: 100%;
+            }
+
+            .deal_1 {
+                height: 100vh;
+            }
+        }
+
+        @media screen and (max-width:990px) {
+            .account {
+                display: block;
+                margin-left: 4%;
+            }
+
+            .logo {
+                display: block;
+                margin-left: 30%;
+            }
+
+            .bar {
+                display: block;
+                width: 65%;
+                margin: auto;
+                /* margin-top: -3%; */
+            }
+
+            .cart {
+                display: block;
+                /* /    width: 65%; */
+                margin-left: 50%;
+                margin-top: 2%;
+            }
+            .data {
+                display: none;
+            }
+        }
+        @media screen and (max-width:980px) {
+            .bar_1 {
+                margin-top: -18%;
+            }
+        }
+        @media screen and (max-width:970px) {
+            .card {
+                width: 45%;
+                margin-top: 2%;
+            }
+            .box_22{
+                width: 35%;
+                margin-left: 10%;
+                height: 50%;
+                padding-top: 5%;                
+            }    
+        }
+              @media screen and (max-width:951px) {
+                .cards{
+                    width: 45%;
+                }
+
+
+              }
+
+        @media screen and (max-width:890px) {
+           .b_search{
+            width: 20%;
+            margin-left: 15%;
+            font-size: 18px;
+           }
+        }
+        @media screen and (max-width:835px) {
+            .email_2{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:790px) {
+            .parent_10{
+                width: 40%;
+            }
+        }
+
+
+
+        @media screen and (max-width:760px) {
+            .box {
+                left: 0%;
+                width: auto;
+                height: auto;
+                margin-top: 7%;
+                margin-left: 7%;
+            }
+            .parent_2 {
+                height: 20vh;
+            }
+            .cards{
+                width: 50%;
+            }    
+            
+        }
+
+        @media screen and (max-width: 696px) {
+            .child_4{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 681px) {
+            .cards{
+                width: 70%;
+            }
+        }
+
+
+
+
+        @media screen and (max-width: 650px) {
+            .box_22{
+                width: 96%;
+                margin-left: 2%;    
+            }
+        }
+
+
+
+        @media screen and (max-width:640px) {
+            .card {
+                width: 90%;
+                margin-left: 5%;
+            }
+            .laptop {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+        @media screen and (max-width:625px) {
+            .b_search{
+                width: 34.9%;
+                margin-left: 0;
+            }
+            .account{
+                width: 40%;
+            }
+            .child_3{
+                width: 800%;
+            }        
+            }
+        
+        @media screen and (max-width:598px) {
+            .b_search{
+                width: 34.5%;
+                margin-left: 0;
+            }  
+        }
+        
+        @media screen and (max-width:525px) {
+            .email_2{
+                width: 90%;
+            }
+        }
+
+
+
+        @media screen and (max-width:510px) {
+            .bar{
+                width: 70%;
+            }
+        }
+ @media screen and (max-width:492px) {
+            .cards {
+                width: 90%;
+                /* margin-left: 0; */
+            }
+        }
+       
+
+
+
+        @media screen and (max-width:480px) {
+            .b_search {
+                width: 34%;
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width:465px) {
+            .e_y{
+                width: 60%;
+            }
+
+        }
+        @media screen and (max-width:390px) {
+            .b_search{
+                width: 33.5%;
+                margin-left: 0;
+            }
+            
+        }
+        @media screen and (max-width:400px) {
+            .parent_10{
+                width: 60%;
+                /* margin-left: 0; */
+            }    
+        }
+            @media screen and (max-width:388px) {
+                .cards{
+                    width: 100%;
+                }
+
+            }
+            @media screen and (max-width:366px) {
+                .cards{
+                    width: 100%;
+                }
+                .debit{
+                    width: 18%;
+                }
+            }
+
+
+
+        @media screen and (max-width:330px) {
+            .b_search{
+                width: 32.5%;
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width:336px) {
+            .sub_1{
+                width: 35%;
+                /* margin-left: 0; */
+            }
+        }
+
+
+
+            
+        @media screen and (max-width:310px) {
+            .account{
+                width: 50%;
+                /* margin-left: 0; */
+            }
+        }
+        @media screen and (max-width:330px) {
+            .card {
+                width: 90%;
+            }
+            .deal_1 {
+                display: none;
+            }
+            .deal_3 {
+                display: none;
+            }
+            .deal_2 {
+                margin-left: 25%;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <section class="section_1">
+        <nav class="head">
+            <div class="child_1">
+                <li class="services">
+                    <i class="fa-solid fa-phone envelop"></i>
+                    <p class="phone">+21-32-41</p>
+                </li>
+                <li class="services">
+                    <i class="fa-solid fa-envelope envelop"></i>
+                    <p class="phone">email@email.com</p>
+                </li>
+                <li class="services">
+                    <i class="fa-solid fa-location-dot envelop"></i>
+                    <p class="phone">173 stanoleaun Road</p>
+                </li>
+            </div>
+            <div class="account">
+                <li class="services edit">
+                    <i class="fa-regular fa-dollar-sign envelop"></i>
+                    <p class="usd">USD</p>
+                </li>
+                <li class="services edit">
+                    <p class="usd">Account</p>
+                    <i class="fa-regular fa-user envelop"></i>
+                </li>
+            </div>
+            <div class="child_2">
+                <div class="logo">
+                    <img class="logo_1" src="./logo.png" alt="">
+                </div>
+                <div class="bar">
+                    <select id="category">
+                        <option value="">All Category</option>
+                        <option value=""> Category 01</option>
+                        <option value=""> Category 02</option>
+                    </select>
+                    <input class="here_11" type="text" placeholder="Search Here">
+                    <button class="b_search">Search</button>
+                </div>
+                <div class="cart">
+                    <div class="wish">
+                        <i class="fa-regular fa-heart heart"></i>
+                        <p class="paras">Your wishlist</p>
+                        <div class="circle">
+                            <p class="two">2</p>
+                        </div>
+                    </div>
+                    <div class="wish">
+                        <i class="fa-solid fa-store heart"></i>
+                        <p class="paras">Your cart</p>
+                        <div class="circle">
+                            <p class="two">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="data">
+            <li class="home adjust ">Home
+                <div class="line"></div>
+            </li>
+            <li class="home">Hot Deals
+                <div class="line"></div>
+            </li>
+            <li class="home">Categories
+                <div class="line"></div>
+            </li>
+            <li class="home">Laptops
+                <div class="line"></div>
+            </li>
+            <li class="home">Smart Phones
+                <div class="line"></div>
+            </li>
+            <li class="home">Caemeras
+                <div class="line"></div>
+            </li>
+            <li class="home">Accessories
+                <div class="line"></div>
+            </li>
+        </div>
+        <div class="parent_1">
+            <div class="card">
+                <img class="shop" src="./shop01.png" alt="">
+                <div class="clip">
+                    <h1 class="laptop">Laptop <br> collection </h1>
+                    <p class="now">SHOP NOW</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <img class="shop" src="./shop02.png" alt="">
+                <div class="clip">
+                    <h1 class="laptop">Accessories <br> collection </h1>
+                    <p class="now">SHOP NOW</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="shop" src="./shop03.png" alt="">
+                <div class="clip">
+                    <h1 class="laptop">Cameras <br> collection </h1>
+                    <p class="now">SHOP NOW</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_2">
+        <div class="parent_2">
+
+            <h1 class="product">NEW PRODUCTS</h1>
+            <div class="box">
+                <li class="smart arang">Laptops
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Smartphones
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Cameras
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Accessories
+                    <div class="line_2"></div>
+                </li>
+            </div>
+        </div>
+        <div class="parent_3">
+            <div class="child_3">
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product01.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product02.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product03.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product04.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product05.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product06.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product07.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product08.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_4">
+
+        <div class="deal_1">
+            <!-- <img class="lap" src="./hotdeal.png" alt=""> -->
+            <div class="deal_2">
+                <div class="m_circle">
+                    <div class="cir">
+                        <h1 class="num">02</h1>
+                        <p class="day">DAYS</p>
+                    </div>
+                    <div class="cir">
+                        <h1 class="num">10</h1>
+                        <p class="day">HOURS</p>
+                    </div>
+                    <div class="cir">
+                        <h1 class="num">34</h1>
+                        <p class="day">MINS</p>
+                    </div>
+                    <div class="cir">
+                        <h1 class="num">60</h1>
+                        <p class="day">SECS</p>
+                    </div>
+                </div>
+                <div class="week">
+                    <h1 class="this">HOT DEALS THIS WEEK</h1>
+                    <h2 class="up">NEW COLLECTION UP TO 50% OFF</h2>
+                    <button class="s_n">SHOP NOW</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 34545 -->
+
+
+    </section>
+
+    <section class="section_5">
+        <div class="parent_2">
+
+            <h1 class="product">TOP SELLING</h1>
+            <div class="box">
+                <li class="smart arang">Laptops
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Smartphones
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Cameras
+                    <div class="line_2"></div>
+                </li>
+                <li class="smart">Accessories
+                    <div class="line_2"></div>
+                </li>
+            </div>
+        </div>
+        <div class="parent_3">
+            <div class="child_3">
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product06.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product02.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product09.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product04.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product05.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product06.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product07.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="slide">
+                    <div class="img_product">
+                        <img class="part_1" src="./product08.png" alt="">
+                        <div class="new">
+                            <h3 class="new_1">New</h3>
+
+                        </div>
+                    </div>
+                    <div class="text_1">
+                        <p class="cate">Category</p>
+                        <h2 class="names">PRODUCT NAMES GOES HERE </h2>
+                        <div class="numeric">
+                            <h2 class="dolor">$980.00</h2>
+                            <span class="dolor_5"> $990.00</span>
+                        </div>
+                    </div>
+
+                    <div class="bar_1">
+                        <div class="icons">
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                            <i class="fa-solid fa-star dis"></i>
+                        </div>
+                    </div>
+                    <div class="suggest">
+                        <div class="eye">
+                            <i class="fa-solid fa-eye arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-solid fa-arrow-right-arrow-left arrow"></i>
+                        </div>
+                        <div class="eye">
+                            <i class="fa-regular fa-heart arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 next slider with parts -->
+    <section class="section_6">
+        <div class="parent_4">
+
+            <!-- 33% 1st child -->
+            <div class="child_4">
+                <div class="slider_11">
+                    <!-- 50% 1st -->
+                    <div class="s_child">
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- 1222 -->
+                        <!-- 50% 2nd -->
+                    <div class="s_child col ">
+
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 12e32432 -->
+                </div>
+            </div>
+
+             <!-- 33% 2nd child -->
+            <div class="child_4">
+                <div class="slider_12">
+                    <div class="s_child col_1">
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s_child">
+
+
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+
+
+                    </div>
+                  <!-- 122323                           -->
+
+            
+
+
+<!-- 123343 -->
+                </div>
+
+            </div>
+
+             <!-- 33% 3rd child -->
+            <div class="child_4">
+                <div class="slider_13">
+                    <div class="s_child">
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                  
+
+                    </div>
+                    <div class="s_child col_2">
+                        <h1 class="top_12">TOP SELLING</h1>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./product03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop03.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h1 class="tex_2">
+                                    PRODUCT NAMES GOES HERE
+                                </h1>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="here">
+                            <div class="pic_11">
+                                <img class="pro" src="./shop02.png" alt="">
+                            </div>
+                            <div class="info">
+                                <P class="text_11">
+                                    CATEGORY
+                                </P>
+                                <h2 class="text_22">
+                                    PRODUCT NAMES GOES HERE
+                                </h2>
+                                <h1 class="text_55">
+                                    $980.00 <span class="value">$990.00</span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_7">
+        <div class="mes">
+            <p class="up_1">Sign Up For the <b>NEWSLETTER</b></p>
+            <i class="fa-regular fa-envelope thin"></i>
+            <div class="email_2">
+                <input class="e_y" type="text" placeholder="Enter Your Email">
+                <button class="sub_1">
+                        <i class="fa-solid fa-envelope envelop-1"></i>
+                        <span class="sub">Subcribe</span>          
+                    </button>
+            </div>
+            <div class="parent_10">
+                <div class="icon_44">
+                    <i class="fa-brands fa-facebook pinter"></i>
+                </div>
+                <div class="icon_44">
+                    <i class="fa-brands fa-youtube pinter"></i>
+                </div>
+                <div class="icon_44">
+    
+                    <i class="fa-brands fa-twitter pinter"></i>
+                </div>
+                <div class="icon_44">
+                    <i class="fa-brands fa-pinterest pinter"></i>
+                </div>
+            </div>
+        </div>
+        <div class="parent_11">
+            <div class="child_14">
+                <div class="box_22 ">
+                    <h1 class="about">ABOUT US</h1>
+                    <p class="sit">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <i class="fa-solid fa-location-dot location"></i>
+                    <p class="road">1734 Stonecoal Road</p>
+                    <i><i class="fa-solid fa-phone location"></i></i>
+                    <p class="road">+021-95-51-84</p>
+                    <i><i class="fa-solid fa-envelope location"></i></i>
+                    <p class="road">email@email.com</p>
+                </div>
+                <div class="box_22">
+                    <h1 class="about">CATEGORIES</h1>
+                    
+                    <div class="arrange">
+                    <div class="a_box">
+                        <p class="sit"> Hot deals </p>               
+                    
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">smart phones </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Laptops </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        
+                        <p class="sit">cameras </p>               
+
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Accessories </p>               
+
+                    </div>     
+                        
+                        
+                    </div>
+
+
+                </div>
+                <div class="box_22">
+                    <h1 class="about ">INFORMATION</h1>
+                    
+                    <div class="arrange">
+                    <div class="a_box">
+                        <p class="sit"> About Us   </p>               
+                    
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Contact </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Privacy Policy  </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        
+                        <p class="sit">Orders and Returns </p>               
+
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit"> Terms & Conditions</p>               
+
+                    </div>     
+                        
+                        
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="box_22">
+                    <h1 class="about">service</h1>
+                    
+                    <div class="arrange">
+                    <div class="a_box">
+                        <p class="sit"> My Account</p>               
+                    
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">View Cart </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Wishlist </p>               
+                
+                    </div>     
+                    <div class="a_box">
+                        
+                        <p class="sit">Track My Orderd </p>               
+
+                    </div>     
+                    <div class="a_box">
+                        <p class="sit">Help </p>               
+                    </div>     
+                    </div>
+                </div>
+            </div>
+            <div class="parent_12"> 
+                <div class="cards">
+                    <div class="debit">
+                        <i class="fa-regular fa-credit-card visa"></i>
+                    </div>
+                    <div class="debit">
+                        <i class="fa-brands fa-cc-visa visa"></i>
+                    </div>
+                    <div class="debit">
+                        <i class="fa-brands fa-cc-mastercard visa"></i>
+                    </div>
+                    <div class="debit">
+                        <i class="fa-brands fa-cc-jcb visa"></i>
+                    </div>
+                    <div class="debit">
+                        <i class="fa-brands fa-cc-paypal visa"></i>
+                    </div>
+                </div>
+
+                <P class="copyright">Copyright ©2023 All rights reserved | This template is made with  by <span class="colori">Colorib</span></P>
+
+            </div>    
+            
+            
+            
+        </div>
+        
+    </section>
+</body>
+
+</html>
+
+                    
+
+
+
+
+
+
+
+
+
+<!-- <div class="here">
+    <div class="pic_11">
+        <img class="pro" src="./product03.png" alt="">
+    </div>
+    <div class="info">
+        <P class="text_11">
+            CATEGORY
+        </P>
+        <h2 class="text_22">
+            PRODUCT NAMES GOES HERE
+        </h2>
+        <h1 class="text_55">
+            $980.00 <span class="value">$990.00</span>
+        </h1>
+
+
+    </div>
+</div>
+<div class="here">
+    <div class="pic_11">
+        <img class="pro" src="./shop03.png" alt="">
+    </div>
+    <div class="info">
+        <P class="text_11">
+            CATEGORY
+        </P>
+        <h1 class="tex_2">
+            PRODUCT NAMES GOES HERE
+        </h1>
+        <h1 class="text_55">
+            $980.00 <span class="value">$990.00</span>
+        </h1>
+
+
+    </div>
+
+
+
+</div>
+<div class="here">
+    <div class="pic_11">
+        <img class="pro" src="./shop02.png" alt="">
+    </div>
+    <div class="info">
+        <P class="text_11">
+            CATEGORY
+        </P>
+        <h2 class="text_22">
+            PRODUCT NAMES GOES HERE
+        </h2>
+        <h1 class="text_55">
+            $980.00 <span class="value">$990.00</span>
+        </h1>
+
+
+    </div>
+
+
+
+</div> -->
